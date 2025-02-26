@@ -9,8 +9,8 @@
 
 1. **Clonar o repositório**:
 ```cmd
-git clone https://github.com/seu-usuario/conexao-hospitalar.git
-cd conexao-hospitalar/backend
+git clone https://github.com/eligado/Conexao-Hospitalar---Backend.git
+cd Conexao-Hospitalar---Backend
 ```
 2. **Ambiente Virtual:**
 ```cmd
@@ -48,3 +48,30 @@ python manage.py runserver
 - Desativar ambiente: deactivate
 
 ## 🔗 Documentação Oficial: [Django Docs](https://docs.djangoproject.com/) 
+
+## 🛠️ Contribuição (Importante!)
+
+⚠️ **Aviso para Desenvolvedores:**  
+```diff
+- NUNCA TRABALHE DIRETAMENTE NA BRANCH MAIN!
++ Sempre crie e utilize uma nova branch para suas alterações!
+```
+
+**Passos Seguros:**  
+1. Crie uma nova branch a partir da `main`:  
+```cmd
+git checkout main
+git pull origin main
+git checkout -b feature/nome-da-sua-feature
+```
+
+2. Trabalhe APENAS na sua branch:  
+```cmd
+git add .
+git commit -m "Descrição clara das mudanças"
+git push origin feature/nome-da-sua-feature
+```
+
+3. Abra um **Pull Request** para revisão antes de mesclar com a `main`
+
+🔒 A branch `main` está protegida - mudanças só serão aceitas via Pull Request aprovado!
