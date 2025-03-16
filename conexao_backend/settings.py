@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',  # Deve vir antes de 'django.contrib.admin'
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -62,7 +63,7 @@ MIDDLEWARE = [
 #CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-     "http://localhost:3001",
+     "http://localhost:3000",
      "http://localhost:8000",
 ]
 
@@ -116,6 +117,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+JAZZMIN_SETTINGS = {
+    "site_title": "Conexão Hosítalar",
+    "site_header": "Conexão Hospitalar",
+    "site_brand": "Administração",
+    "welcome_sign": "Bem-vindo ao painel de administração",
+    "copyright": "Conexão hospitalar",
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
