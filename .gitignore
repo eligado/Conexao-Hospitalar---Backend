@@ -1,0 +1,17 @@
+# Arquivo de banco de dados
+db.sqlite3
+
+# Cache de Python
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Arquivos de migração compilados
+*.cpython-*
+
+# Pasta de migrações (sem remover o __init__.py)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Arquivo com informações sensíveis
+senha.txt
